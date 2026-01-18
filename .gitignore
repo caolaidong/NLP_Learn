@@ -1,207 +1,158 @@
-# Byte-compiled / optimized / DLL files
+# ==================================================
+# IDE / Editor (PyCharm 2025+)
+# ==================================================
+
+# PyCharm 本地配置（窗口状态、路径、解释器、缓存）
+# 👉 每个开发者不同，绝不应提交
+.idea/
+.jbeval/
+# PyCharm 模块文件（历史遗留，但仍可能生成）
+*.iml
+
+# ==================================================
+# Python Runtime & Cache
+# ==================================================
+
+# Python 字节码缓存
+# 👉 运行时自动生成，可随时重建
 __pycache__/
-*.py[codz]
-*$py.class
+*.py[cod]
 
-# C extensions
-*.so
 
-# Distribution / packaging
-.Python
+# ==================================================
+# Build / Distribution Artifacts
+# ==================================================
+
+# setuptools / pip 构建产物
+# 👉 构建结果，不是源码
 build/
-develop-eggs/
 dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
+
+# 包元数据
+# 👉 安装时自动生成
 *.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+.eggs/
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+# Wheel 文件
+# 👉 发布产物，不是工程源码
+*.whl
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
 
-# Unit test / coverage reports
+# ==================================================
+# Native Extensions (C / Cython)
+# ==================================================
+
+# 编译后的二进制扩展
+# 👉 平台 & Python 版本相关，不可复现
+*.so
+*.pyd
+*.dll
+
+
+# ==================================================
+# Virtual Environments
+# ==================================================
+
+# Python 虚拟环境目录
+# 👉 环境状态，不属于代码
+venv/
+env/
+ENV/
+.venv/
+virtualenv/
+.conda/
+
+
+# ==================================================
+# Environment Variables & Secrets (CRITICAL)
+# ==================================================
+
+# 环境变量文件（密钥、Token、数据库密码）
+# 👉 必须忽略，避免泄露
+.env
+.env.*
+
+
+# ==================================================
+# Testing / QA Tools
+# ==================================================
+
+# pytest 缓存
+.pytest_cache/
+
+# 覆盖率数据
+.coverage
 htmlcov/
+
+# tox / nox 虚拟测试环境
 .tox/
 .nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py.cover
-.hypothesis/
-.pytest_cache/
-cover/
 
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-.pybuilder/
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# UV
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#uv.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-#poetry.toml
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#   pdm recommends including project-wide configuration in pdm.toml, but excluding .pdm-python.
-#   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
-#pdm.lock
-#pdm.toml
-.pdm-python
-.pdm-build/
-
-# pixi
-#   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
-#pixi.lock
-#   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
-#   in the .venv directory. It is recommended not to include this directory in version control.
-.pixi
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.envrc
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
+# 类型检查缓存
 .mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
-
-# Abstra
-# Abstra is an AI-powered process automation framework.
-# Ignore directories containing user credentials, local state, and settings.
-# Learn more at https://abstra.io/docs
-.abstra/
-
-# Visual Studio Code
-#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
-#  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#  and can be added to the global gitignore or merged into this file. However, if you prefer, 
-#  you could uncomment the following to ignore the entire vscode folder
-# .vscode/
-
-# Ruff stuff:
 .ruff_cache/
 
-# PyPI configuration file
-.pypirc
 
-# Cursor
-#  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
-#  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
-#  refer to https://docs.cursor.com/context/ignore-files
-.cursorignore
-.cursorindexingignore
+# ==================================================
+# Jupyter Notebook
+# ==================================================
 
-# Marimo
-marimo/_static/
-marimo/_lsp/
-__marimo__/
+# Notebook 自动生成的检查点
+# 👉 编辑器状态，不是内容
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+
+# ==================================================
+# Logs & Runtime Files
+# ==================================================
+
+# 运行日志 / PID / 临时文件
+# 👉 运行期产物
+*.log
+*.pid
+*.tmp
+*.bak
+logs/
+tmp/
+temp/
+
+
+# ==================================================
+# OS Files
+# ==================================================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+
+
+# ==================================================
+# Editor Temporary Files
+# ==================================================
+
+# Vim / Emacs
+*~
+.*.swp
+.*.swo
+
+
+# ==================================================
+# Pre-commit / Tooling
+# ==================================================
+
+# pre-commit 本地缓存
+.pre-commit-cache/
+.cache/
+
+# 大文件 / 数据集
+*.zip
+*.rar
+*.7z
